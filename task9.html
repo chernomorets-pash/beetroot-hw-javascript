@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9</title>
+</head>
+
+<body>
+    <script>
+        // Task 9
+        // Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. За каждый правильный ответ начисляется 2 балла. После вопросов выведите пользователю количество набранных баллов.
+        let totalScore = 0;
+        let userAnswer = +prompt(
+            "Q1: Is Javascript the same as Java? Choose the right answer: 1-Yes 2-No 3-I dont know");
+        if (userAnswer == 2) {
+            ++totalScore;
+            ++totalScore;
+        }
+        userAnswer = +prompt(
+            "Q2: What does HTML means? 1-How to meet ladys; 2-HyperText Markup Language 3- What is html? ");
+        if (userAnswer == 2) {
+            ++totalScore;
+            ++totalScore;
+        }
+        userAnswer = +prompt(
+            "Q3: Who is true inventor in Apple computers? 1: Steve Jobs; 2: Steve Wozniak 3: Bill Gates");
+        if (userAnswer == 2) {
+            ++totalScore;
+            ++totalScore;
+        }
+        console.log(totalScore);
+    </script>
+</body>
+
+</html>

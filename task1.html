@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+
+<body>
+    <script>
+        // Task #1
+        // Запросить у пользователя его возраст и определить, кем он является: ребенком (0–2), подростком (12–18), взрослым (18_60) или пенсионером (60– ...).
+        let userAge = +prompt("Please, enter your age: ");
+        if (userAge >= 0 && userAge <= 2) {
+            console.log("you are baby");
+        } else if (userAge >= 12 && userAge <= 18) {
+            console.log("you are child");
+        } else if (userAge >= 18 && userAge < 60) {
+            console.log("you are adult");
+        } else if (userAge >= 60) {
+            console.log("you are on pension")
+        }
+    </script>
+</body>
+
+</html>
