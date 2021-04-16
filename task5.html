@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5 loops</title>
+</head>
+<body>
+    <h1>Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей. При этом также посчитать, сколько четных и нечетных. Вывести статистику на экран. Учтите, что достаточно одной переменной (не 10) для ввода чисел пользователем.</h1>
+    <script>
+        let userNum;
+        let positive=0,
+            negative=0,
+            even=0,
+            odd=0,
+            zero=0;
+        for (let i =0; i <= 10; i++) {
+            userNum = +prompt ("enter your number: ");
+            if (userNum == 0) {
+                zero++;
+            } 
+            if (userNum >0) {
+                positive++;
+            } 
+            if (userNum <0) {
+                negative++;
+            }
+            if (userNum%2 == 0){
+                even++
+            }
+            if (userNum%2 !== 0) {
+                odd++
+            }
+        }
+        console.log (`Zero's: ${zero} Negative = ${negative} Positive = ${positive} Even= ${even} Odd= ${odd}`);
+    </script>
+</body>
+</html>
