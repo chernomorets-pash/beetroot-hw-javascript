@@ -7,4 +7,4 @@ function timeFunct(h) {
   }
   
 let time = timeFunct(22)()(11);
-console.log(time);
+console.log(timeFunct);
