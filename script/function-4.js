@@ -1,6 +1,4 @@
-function rectangle () {
-    let a = +prompt ("legngth: ");
-    let b = +prompt ("width: ");
+function rectangle (a,b) {
     let s;
 if (a != 0 && b != 0) {
     s = a*b;
@@ -12,4 +10,6 @@ if (a != 0 && b != 0) {
     console.log ("Wrong input!");
 }
 }
+a = +prompt ("legngth: ");
+b = +prompt ("width: ");
 rectangle ();
