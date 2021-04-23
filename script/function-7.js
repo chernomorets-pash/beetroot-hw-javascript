@@ -6,5 +6,5 @@ function timeFunct(h) {
     }
   }
   
-let time = timeFunct(24)()(59);
-  console.log(time);
+let time = timeFunct(22)()(11);
+console.log(time);
